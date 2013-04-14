@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 public class MainActivity extends DroidGap {
 
-    private static final int SPLASH_DISPLAY_TIME = 1000;
+    private static final int SPLASH_DISPLAY_TIME = 5000;
    
     
     @Override

@@ -33,8 +33,7 @@
         <activity
             android:name="com.nolanlawson.imperial.android.MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:label="@string/app_name" 
-            android:windowSoftInputMode="adjustPan" >
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
