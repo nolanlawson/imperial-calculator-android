@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cordova>
+    
+  <!--  Forces any href that's not m.kaahe.org to open in a separate browser window. -->
+  <!--  FYI, the only one we need to allow is get_news.cgi -->
+  <!--  See https://build.phonegap.com/blog/access-tags -->
+  <!--  and https://build.phonegap.com/docs/config-xml -->
+  <access origin="http://m.kaahe.org"/>
+  
+  <log level="INFO"/>
+  
+  <preference name="useBrowserHistory" value="true" />
+  <preference name="exit-on-suspend" value="false"/>
+  <preference name="load-url-timeout" value="120000" />
+  
+  <plugins>
+    <plugin name="App" value="org.apache.cordova.App"/>
+    <plugin name="Device" value="org.apache.cordova.Device"/>
+    <plugin name="Notification" value="org.apache.cordova.Notification"/>
+    <plugin name="Storage" value="org.apache.cordova.Storage"/>
+    <plugin name="SplashScreen" value="org.apache.cordova.SplashScreen"/>
+    <plugin name="GAPlugin" value="com.adobe.plugins.GAPlugin"/>
+    <plugin name="SQLitePlugin" value="com.phonegap.plugin.sqlitePlugin.SQLitePlugin"/>
+  </plugins>
+  
+</cordova>
