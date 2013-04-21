@@ -8,7 +8,7 @@ cp -r ../imperial-calculator/* assets/www
 $sed_command -i '/<\/body>/i<script src="phonegap.js"><\/script>' assets/www/index.html
 
 
-adb uninstall com.nolanlawson.imperial.android
+#adb uninstall com.nolanlawson.imperial.android
 ant clean debug install
 adb shell am start -a android.intent.action.MAIN -n com.nolanlawson.imperial.android/.MainActivity
 
