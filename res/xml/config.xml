@@ -20,7 +20,7 @@
     <plugin name="Storage" value="org.apache.cordova.Storage"/>
     <plugin name="SplashScreen" value="org.apache.cordova.SplashScreen"/>
     <plugin name="GAPlugin" value="com.adobe.plugins.GAPlugin"/>
-    <plugin name="SQLitePlugin" value="com.phonegap.plugin.sqlitePlugin.SQLitePlugin"/>
+    <plugin name="Share" value="com.schaul.plugins.share.Share"/>
   </plugins>
   
 </cordova>

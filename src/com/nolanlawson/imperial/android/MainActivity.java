@@ -20,11 +20,19 @@ public class MainActivity extends DroidGap {
         
         setContentView(R.layout.activity_main);
         
-        startCordova();
-    }
+        
+        if (getIntent() != null && getIntent().getData() != null 
+        		&& getIntent().getData().getPath() != null
+        		&& getIntent().getData().getPath().equals("/imperial-calculator/")
+        		&& getIntent().getData().getEncodedFragment() != null) {
+        	// handle "share" URL
+        	
+        	String fragment = getIntent().getData().getEncodedFragment();
+        	loadUrl("file:///android_asset/www/index.html#" + fragment, SPLASH_DISPLAY_TIME);
+        	
+        } else {
+        	loadUrl("file:///android_asset/www/index.html", SPLASH_DISPLAY_TIME);
+        }
 
-    private void startCordova() {
-        super.loadUrl("file:///android_asset/www/index.html", SPLASH_DISPLAY_TIME);
-    }
-    
+    }    
 }
