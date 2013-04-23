@@ -6,6 +6,7 @@ if [ $(uname) == 'Darwin' ]; then sed_command='gsed'; fi
 
 cp -r ../imperial-calculator/* assets/www
 $sed_command -i '/<\/body>/i<script src="phonegap.js"><\/script><script src="share.js"><\/script>' assets/www/index.html
+rm -fr assets/www/gimp/
 
 
 #adb uninstall com.nolanlawson.imperial.android
