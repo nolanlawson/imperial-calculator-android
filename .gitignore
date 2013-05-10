@@ -2,3 +2,6 @@
 bin
 gen
 .DS_Store
+assets/www
+!assets/www/phonegap.js
+!assets/www/share.js
